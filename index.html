@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Court Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <!--load all Font Awesome styles -->
+    <link href="./assets/fonts/fontawesome-6.1.0/css/all.min.css" rel="stylesheet">
+    <!-- Nhung Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <div class="header__wrapper">
+                    <div class="header__left">
+                        <div class="header__logo">
+                            <img src="./asset/img/logo.png" alt="Logo">
+                        </div>
+                        <div class="header__search">
+                            <input type="text" class="header__search-input" placeholder="Search">
+                            <div class="header__search-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
+                                        stroke="#83859C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14 14L11.1 11.1" stroke="#83859C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="header__right header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <a class="header__navbar-link" href="#">Browser</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a class="header__navbar-link" href="#">My activities</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="#" class="header__navbar-avatar">
+                                    <img src="./asset/img/avatar.png" alt="avatar" class="header__navbar-avatar-img">
+                                </a>
+                            </li>
+                            <li class="header__navbar-item"><a class="header__navbar-link" href="#">Log out</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <!-- Jumbotron -->
+            <div class="grid">
+                <div class="jumbotron">
+                    <div class="jumbotron__content">
+                        <div class="jumbotron__title">
+                            <p>THE LIFESTYLE <br />THAT KEEPS YOU ENERGIZED</p>
+                        </div>
+                        <div class="jumbotron__description">
+                            <p>With its diverse list of members, professional equipment and lots of tidy courts
+                                The Tennique is a gateway leading you to tennis paradise</p>
+                        </div>
+                        <a href="#" class="jumbotron__btn">
+                            Book a court
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About-tennique -->
+            <div class="grid">
+                <div class="about-tennique">
+                    <div class="about-tennique__content">
+                        <p class="about-tennique__title">ABOUT TENNIQUE</p>
+                        <p class="about-tennique__description">Tennique is one of the most popular tennis court booking
+                            websites in Vietnam. We offers a wide range of facilities, convenient and fast scheduling
+                            consultation system to meet the needs of any individual or group of tennis players.</p>
+                    </div>
+                    <div class="about-tennique__counts">
+                        <div class="about-tennique__counts-col">
+                            <div class="about-tennique__counts-col-item">
+                                <p class="about-tennique__counts-col-item-number">71+</p>
+                                <p class="about-tennique__counts-col-item-title">TENNIS COURTS</p>
+                            </div>
+                            <div class="about-tennique__counts-col-item">
+                                <p class="about-tennique__counts-col-item-number">1000+</p>
+                                <p class="about-tennique__counts-col-item-title">review 5 star</p>
+                            </div>
+                        </div>
+                        <div class="about-tennique__counts-col">
+                            <div class="about-tennique__counts-col-item">
+                                <p class="about-tennique__counts-col-item-number">999+</p>
+                                <p class="about-tennique__counts-col-item-title">club members</p>
+                            </div>
+                            <div class="about-tennique__counts-col-item">
+                                <p class="about-tennique__counts-col-item-number">5000+</p>
+                                <p class="about-tennique__counts-col-item-title">VISITORS YEARLY</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="about-tennique__image">
+                        <img src="./asset/img/3265156-removebg-preview1.png" alt="Tennis">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Courts -->
+            <div class="grid">
+                <div class="courts__container">
+                    <div class="courts__sales">
+                        <a href="#" class="courts__sales-item">
+                            <div class="courts__sales-item-img" style="background-image: url(./asset/img/vot.png);">
+                            </div>
+                            <div class="courts__sales-item-content">
+                                <h4 class="courts__sales-item-title">
+                                    Surprise! <br /> All courts are now
+                                </h4>
+                                <p class="courts__sales-item-price">
+                                    20% OFF
+                                </p>
+                                <p class="courts__sales-item-description">
+                                    Limited time only
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="courts__sales-item">
+                            <div class="courts__sales-item-img" style="background-image: url(./asset/img/vot2.png);">
+                            </div>
+                            <div class="courts__sales-item-content">
+                                <h4 class="courts__sales-item-title">
+                                    Register for weekdays
+                                </h4>
+                                <p class="courts__sales-item-price">
+                                    40% OFF
+                                </p>
+                                <p class="courts__sales-item-description">
+                                    Only in June, 2022
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="courts__wrapper">
+                        <div class="courts__header">
+                            <h3 class="courts__title">Trending courts</h3>
+                            <a href="#" class="courts__view-link">View all</a>
+                        </div>
+                        <div class="courts__grid">
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/sanvot.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                Dong Que Tennis Court
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">Thu Duc</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                153 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/sanvot.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                Dong Que Tennis Court
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">Thu Duc</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                153 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/sanvot.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                Dong Que Tennis Court
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">Thu Duc</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                153 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/sanvot.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                Dong Que Tennis Court
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">Thu Duc</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                153 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/sanvot.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                Dong Que Tennis Court
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">Thu Duc</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                153 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/sanvot.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                Dong Que Tennis Court
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">Thu Duc</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                153 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="courts__wrapper courts__wrapper-mrtop">
+                        <div class="courts__header">
+                            <h3 class="courts__title">Courts near you</h3>
+                            <a href="#" class="courts__view-link">View all</a>
+                        </div>
+                        <div class="courts__grid">
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/home.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                Dong Que Tennis Court
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">Thu Duc</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                153 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/home.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                Dong Que Tennis Court
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">Thu Duc</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                153 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/home.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                Dong Que Tennis Court
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">Thu Duc</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                153 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/home.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                Dong Que Tennis Court
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">Thu Duc</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                153 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/home.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                Dong Que Tennis Court
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">Thu Duc</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                153 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/home.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                Dong Que Tennis Court
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">Thu Duc</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                153 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="courts__wrapper courts__wrapper-mrtop">
+                        <div class="courts__header">
+                            <h3 class="courts__title">Discount courts</h3>
+                            <a href="#" class="courts__view-link">View all</a>
+                        </div>
+                        <div class="courts__grid">
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/fields.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                The Anh Club
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">District
+                                                        10</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                200 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/fields.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                The Anh Club
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">District
+                                                        10</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                200 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/fields.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                The Anh Club
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">District
+                                                        10</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                200 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/fields.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                The Anh Club
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">District
+                                                        10</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                200 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/fields.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                The Anh Club
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">District
+                                                        10</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                200 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="courts__grid-item">
+                                <a href="#" class="courts__grid-item-wrapper">
+                                    <div class="courts__grid-item-img">
+                                        <img src="./asset/img/fields.png" alt="San vot">
+                                        <div class="courts__grid-item-content-temp">
+                                            <span>FEATURED</span>
+                                        </div>
+                                    </div>
+                                    <div class="courts__grid-item-content">
+                                        <div class="courts__grid-item-content-info">
+                                            <h6 class="courts__grid-item-content-title">
+                                                The Anh Club
+                                            </h6>
+
+                                            <div class="courts__grid-item-content-description">
+                                                <div class="courts__grid-item-content-address">
+                                                    <span class="courts__grid-item-content-address-icon">
+                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M9.2065 1.94996L1.066 5.11296L3.4805 6.11596C4.18626 6.40871 4.74698 6.9696 5.0395 7.67546L6.0425 10.0895L9.2065 1.94996ZM10.13 2.29096L6.966 10.4315C6.766 10.9465 6.1905 11.21 5.6805 11.0215C5.55623 10.9756 5.44278 10.9045 5.34728 10.8127C5.25177 10.7209 5.17627 10.6103 5.1255 10.488L4.122 8.07296C3.92678 7.60262 3.55293 7.22895 3.0825 7.03396L0.668499 6.03096C0.166499 5.82246 -0.0625006 5.24296 0.156999 4.73596C0.210924 4.61203 0.288826 4.49998 0.386221 4.40628C0.483616 4.31257 0.598581 4.23906 0.724499 4.18996L8.865 1.02596C9.04184 0.954884 9.23567 0.937343 9.42241 0.975513C9.60914 1.01368 9.78054 1.10588 9.91531 1.24065C10.0501 1.37542 10.1423 1.54682 10.1804 1.73355C10.2186 1.92028 10.2011 2.11411 10.13 2.29096Z"
+                                                                fill="black" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="courts__grid-item-content-address-name">District
+                                                        10</span>
+                                                </div>
+                                                <div class="courts__grid-item-content-content-ellipse"></div>
+                                                <span class="courts__grid-item-content-price">
+                                                    300.000đ min sum
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="courts__grid-item-content-rate">
+                                            <div class="courts__grid-item-content-stars">
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span>
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M5.869 0.747967C6.13703 0.204975 6.91133 0.204974 7.17935 0.747966L8.54932 3.52337C8.65566 3.7388 8.86111 3.88819 9.09883 3.92294L12.1636 4.3709C12.7627 4.45846 13.0014 5.19484 12.5677 5.61727L10.3512 7.77616C10.1789 7.94401 10.1002 8.18595 10.1409 8.42307L10.6638 11.4721C10.7662 12.069 10.1397 12.5242 9.60363 12.2423L6.86426 10.8017C6.65136 10.6897 6.397 10.6897 6.1841 10.8017L3.44473 12.2423C2.90871 12.5242 2.28214 12.069 2.38452 11.4721L2.90747 8.42307C2.94814 8.18595 2.86947 7.94401 2.69713 7.77616L0.480618 5.61727C0.0469114 5.19484 0.285673 4.45846 0.88474 4.3709L3.94953 3.92294C4.18725 3.88819 4.3927 3.7388 4.49903 3.52337L5.869 0.747967Z"
+                                                            fill="#58D66C" />
+                                                    </svg>
+                                                </span>
+                                                <span class="courts__grid-item-content-hstar">
+                                                </span>
+                                            </div>
+                                            <span class="courts__grid-item-content-view">
+                                                200 reviews
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="footer__top">
+                    <div class="footer__contact">
+                        <div class="footer__contact-phone">
+                            <span class="footer__contact-phone-icon">
+                                <svg width="20" height="23" viewBox="0 0 20 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.8881 16.9512V20.3596C19.8904 20.9994 19.6552 21.6107 19.2402 22.0432C18.8252 22.4757 18.269 22.6895 17.7081 22.6319C14.631 22.252 11.6751 21.0574 9.07812 19.1439C6.66195 17.3996 4.61346 15.0722 3.07812 12.3272C1.3881 9.36321 0.336367 5.98866 0.0081238 2.47688C-0.042403 1.84164 0.144396 1.21152 0.52289 0.74044C0.901383 0.269363 1.43672 0.000712366 1.99812 0.000111703H4.99812C6.00199 -0.0111135 6.85762 0.824907 6.99812 1.95426C7.12475 3.04502 7.35957 4.11601 7.69812 5.14679C7.97286 5.97716 7.79714 6.91326 7.24812 7.54403L5.97812 8.98692C7.40168 11.8313 9.47458 14.1864 11.9781 15.8037L13.2481 14.3608C13.8033 13.7371 14.6272 13.5374 15.3581 13.8496C16.2654 14.2342 17.2081 14.501 18.1681 14.6449C19.1737 14.806 19.9133 15.7978 19.8881 16.9512Z"
+                                        fill="#58D66C" />
+                                </svg>
+                                CONTACT US
+                            </span>
+                            <br> <span class="footer__contact-phone-number">(+84) 0123456789</span>
+                        </div>
+                        <div class="footer__contact-channel">
+                            <a href="#" class="footer__contact-channel-fb">
+                                <svg width="45" height="46" viewBox="0 0 45 46" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M45 22.8603C45 10.2335 34.9277 0 22.5 0C10.0723 0 0 10.2335 0 22.8603C0 34.2726 8.22656 43.7292 18.9844 45.4437V29.4683H13.2715V22.8603H18.9844V17.8239C18.9844 12.0954 22.3418 8.92979 27.4834 8.92979C29.9443 8.92979 32.5195 9.37628 32.5195 9.37628V15.0021H29.6807C26.8857 15.0021 26.0156 16.7657 26.0156 18.574V22.8603H32.2559L31.2583 29.4683H26.0156V45.4437C36.7734 43.7292 45 34.2726 45 22.8603Z"
+                                        fill="#1877F2" />
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__contact-channel-tw">
+                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.6 2.15865C18.9 2.49949 18.1 2.72672 17.3 2.84033C18.1 2.27227 18.8 1.36336 19.1 0.340843C18.3 0.90891 17.5 1.24975 16.5 1.47698C15.8 0.56807 14.7 0 13.6 0C11.4 0 9.59999 2.04504 9.59999 4.54453C9.59999 4.88537 9.6 5.2262 9.7 5.56704C6.4 5.33982 3.39999 3.52201 1.39999 0.795289C1.09999 1.47697 0.899994 2.27226 0.899994 3.06755C0.899994 4.65814 1.6 6.0215 2.7 6.8168C2 6.8168 1.39999 6.58957 0.899994 6.24873C0.899994 8.40738 2.29999 10.3388 4.09999 10.6796C3.79999 10.7933 3.4 10.7933 3 10.7933C2.7 10.7933 2.5 10.7933 2.2 10.6796C2.7 12.4975 4.2 13.8608 6 13.8608C4.6 15.1106 2.9 15.7922 1 15.7922C0.7 15.7922 0.4 15.7922 0 15.6786C1.8 16.9284 3.9 17.7237 6.2 17.7237C13.6 17.7237 17.6 10.7933 17.6 4.77175V4.20369C18.4 3.86285 19.1 3.06755 19.6 2.15865Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__contact-channel-gg">
+                                <svg width="19" height="22" viewBox="0 0 19 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.34166 8.45472V12.9519H14.725C13.9333 15.3804 11.875 16.9994 9.5 16.9994C6.4125 16.9994 3.95833 14.2111 3.95833 10.7033C3.95833 7.1955 6.4125 4.40725 9.5 4.40725C10.6875 4.40725 11.7958 4.85697 12.7458 5.57652L13.0625 5.84635L15.4375 2.33854L15.1208 2.06871C13.4583 0.71955 11.5583 0 9.5 0C4.275 0 0 4.85697 0 10.7933C0 16.7296 4.275 21.5865 9.5 21.5865C14.725 21.5865 19 16.7296 19 10.7933V8.54466H9.34166V8.45472Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#" class="footer__contact-channel-yt">
+                                <span>
+                                    <svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 9.08906V0L6.4 4.5447L0 9.08906Z" fill="#FF0000" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__tennique">
+                        <div class="footer__tennique-logo">
+                            <img src="./asset/img/logo.png" alt="logo">
+                        </div>
+                        <form name="#" class="footer__tennique-form">
+                            <input class="footer__tennique-form-input" type="text" placeholder="Enter your email here">
+                            <button type="submit" class="footer__tennique-form-btn">Subcribe now</button>
+                        </form>
+                    </div>
+                    <div class="footer__address">
+                        <span class="footer__address-title">
+                            <svg width="20" height="22" viewBox="0 0 20 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M19 9.08288C19 15.3696 10 20.7581 10 20.7581C10 20.7581 1 15.3696 1 9.08288C1 4.61883 5.02944 1 10 1C14.9706 1 19 4.61883 19 9.08288V9.08288Z"
+                                    stroke="#58D66C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg class="icon-center" width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4 7.8168C5.65685 7.8168 7 6.2908 7 4.4084C7 2.52599 5.65685 1 4 1C2.34315 1 1 2.52599 1 4.4084C1 6.2908 2.34315 7.8168 4 7.8168Z"
+                                    stroke="#58D66C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            ADDRESS
+                        </span>
+                        <p class="footer__address-content">
+                            Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="footer__bottom">
+                <div class="grid">
+                    <div class="footer__bottom-wrapper">
+                        <div class="footer__link-store">
+                            <div class="footer__link-app-store">
+                                <img src="./asset/img/appstore.png" alt="Apps tore">
+                            </div>
+                            <div class="footer__link-ggplay">
+                                <img src="./asset/img/googleplay.png" alt="Apps tore">
+                            </div>
+                        </div>
+                        <ul class="footer__nav">
+                            <li><a href="#" class="footer__nav-link">Explore</a></li>
+                            <li><a href="#" class="footer__nav-link">Term & Conditions</a></li>
+                            <li><a href="#" class="footer__nav-link">Privacy Policy</a></li>
+                        </ul>
+                        <div class="footer__register">
+                            <img src="./asset/img/register.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
