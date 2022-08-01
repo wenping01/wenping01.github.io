@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #58D66C;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #2B2B43;
+    --subtext-color: #83859C;
+    --background-light-color: #EDEEF2;
+    --border-color: #EDEEF2;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+ul {
+    margin: 0;
+}
+
+.grid {
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
