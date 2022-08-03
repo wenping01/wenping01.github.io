@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 .header {
     height: 80px;
     background-color: var(--white-color);
@@ -87,7 +91,7 @@
 .jumbotron {
     width: 100%;
     height: 847px;
-    background-image: url(../img/jumbotron.png);
+    background-image: url("../img/jumbotron.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -676,3 +680,370 @@
     color: var(--white-color);
 }
 
+/* Modal css */
+
+.modal {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 99;
+    font-family: 'Inter', sans-serif;
+}
+
+.modal__container {
+    width: 1186px;
+    height: 2996px;
+    margin: 84px auto 0 auto;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.modal__header {
+    padding: 44px 72px 40px 72px;
+}
+
+.modal__header h3 {
+    font-size: 4.8rem;
+    font-weight: 800;
+    line-height: 5.8rem;
+    margin: 0;
+}
+
+.modal__body {
+    display: flex;
+    padding: 0 135px 0 95px;
+}
+
+.modal__sidebar {
+    position: relative;
+    width: 314px;
+    margin-right: 36px;
+}
+
+.progress-bar__list {
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+.progress-bar__item {
+    margin-bottom: 52px;
+}
+
+.progress-bar__item.active .progress-bar__ellipse {
+    width: 25px;
+    height: 25px;
+    margin-left: -3px;
+    margin-bottom: -5px;
+    border: 5px solid var(--primary-color);
+}
+
+.progress-bar__item a {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.progress-bar__ellipse {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 19px;
+    border-radius: 50%;
+    border: 2px solid #6D6D6D;
+}
+
+.progress-bar__line-dot {
+    position: absolute;
+    top: 33px;
+    left: 8px;
+    width: 2px;
+    height: 446px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__content {
+    width: 606px;
+    height: 2800px;
+}
+
+.add-court__form {
+
+}
+
+.form__fieldset-wrapper {
+    margin-bottom: 15px;
+}
+
+.form__fieldset-label {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    color: var(--black-color);
+    margin: 0;
+    padding-bottom: 4px;
+    margin-left: 2px;
+}
+
+.form__fieldset {
+    width: 100%;
+    border-radius: 9px;
+    border: 1px solid #C7C8D2;
+    padding: 14px;
+    margin-bottom: 10px;
+}
+
+.input__wrapper {
+    margin-bottom: 20px;
+}
+
+.input__label {
+    margin: 0 0 5px 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.input__wrapper input {
+    height: 54px;
+}
+
+.input__wrapper input,
+.input__wrapper textarea {
+    width: 576px;
+    border-radius: 10px;
+    border: 1px solid #C7C8D2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 15px;
+    line-height: 2.4rem;
+    letter-spacing: 0.12px;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+}
+
+.input__wrapper input:focus,
+.input__wrapper textarea:focus,
+.input__wrapper select:focus {
+    border-color: var(--primary-color);
+}
+
+.input__wrapper textarea {
+    height: 137px;
+    resize: none;
+}
+
+.form__fieldset.fieldset-radio {
+    padding: 28px 21px 16px 16px;
+}
+
+.radio__item {
+    display: flex;
+    margin-bottom: 13px;
+}
+
+.radio-input {
+    margin-right: 12px;
+}
+
+.radio-input input {
+    width: 20px;
+    height: 20px;
+    accent-color: #07a568;
+}
+
+.radio__item-label-title {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+}
+
+.radio__item-label-des {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    margin: 2px 0 0 0;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.select-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-group select {
+    width: 262px;
+}
+
+.input__wrapper select {
+    height: 54px;
+    border-radius: 10px;
+    border: 1px solid #C7C8D2;
+    color: var(--subtext-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 15px;
+    line-height: 2.4rem;
+    letter-spacing: 0.12px;
+    font-family: 'Nunito', sans-serif;
+    background-color: #fff;
+}
+
+.map__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__fieldset-label-des {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    font-family: 'Nunito', sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 0 8px 2px;
+    max-width: 532px;
+}
+
+.court-price {
+
+}
+
+.court-price__item {
+    display: flex;
+    justify-content: center;
+}
+
+.court-price__item .input__wrapper input {
+    width: 262px;
+}
+
+.court-price__item .input__wrapper select {
+    width: 196px;
+    margin-right: 21px;
+}
+
+.input__label.input__label--small {
+    font-size: 1.4rem;
+    line-height: 17px;
+}
+
+.court-price__add-item {
+    margin-left: 50px;
+    margin-top: -4px;
+}
+
+.add-times-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    margin-right: 10px;
+}
+
+#court-photo .form__fieldset {
+    display: flex;
+    height: 207px;
+}
+
+.add-photo__btn {
+    width: 93px;
+    height: 70px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.add-photo__btn img {
+    margin-left: 20px;
+}
+
+.add-photo__btn-title,
+.add-photo__btn-des {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.add-photo__btn-des {
+    color: #808080;
+}
+
+select#choose-bank {
+    width: 576px;
+}
+
+.input__card {
+    position: relative;
+    width: 576px;
+    height: 54px;
+    border-radius: 9px;
+}
+
+.input__card span.vi-img {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+}
+
+.input__card span.check-img {
+    position: absolute;
+    top: 16px;
+    right: 55px;
+}
+
+#business-license .form__fieldset {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 14px 0;
+}
+
+.add-photo__item {
+    width: 275px;
+    height: 177px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 38px;
+    margin-right: -85px;
+}
+
+.btn-group button {
+    width: 110px;
+    height: 48px;
+    border-radius: 8px;
+    color: var(--white-color);
+    margin-left: 21px;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.46px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background-color: #B7B7B7;
+}
+
+.btn-confirm {
+    background-color: var(--primary-color);
+}

@@ -24,7 +24,7 @@ a {
     text-decoration: none;
 }
 
-input {
+input, textarea, select, button {
     border: none;
     outline: none;
 }

@@ -14,7 +14,7 @@
     <!-- Nhung Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
 
@@ -1155,6 +1155,276 @@
             </div>
         </footer>
     </div>
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal__header">
+                <h3>Add a court</h3>
+            </div>
+            <div class="modal__body">
+                <div class="modal__sidebar">
+                    <ul class="progress-bar__list">
+                        <li class="progress-bar__item active"><a href="#"><span class="progress-bar__ellipse"></span>Basics</a></li>
+                        <li class="progress-bar__item"><a href="#basics"><span class="progress-bar__ellipse"></span>Cancellation policy</a></li>
+                        <li class="progress-bar__item"><a href="#cancellation-policy"><span class="progress-bar__ellipse"></span>Location</a></li>
+                        <li class="progress-bar__item"><a href="#location"><span class="progress-bar__ellipse"></span>Resided court and details</a></li>
+                        <li class="progress-bar__item"><a href="#"><span class="progress-bar__ellipse"></span>Court Photo</a></li>
+                        <li class="progress-bar__item"><a href="#"><span class="progress-bar__ellipse"></span>Payment Detail</a></li>
+                        <li class="progress-bar__item"><a href="#"><span class="progress-bar__ellipse"></span>Business License</a></li>
+                    </ul>
+                    <div class="progress-bar__line-dot">
+                    </div>
+                </div>
+                <div class="modal__content">
+                    <form name="add-court" class="add-court__form">
+                        <div id="basics" class="form__fieldset-wrapper">
+                            <h4 class="form__fieldset-label">Basics</h4>
+                            <fieldset class="form__fieldset">
+                                <div class="input__wrapper">
+                                    <p class="input__label">
+                                        Court Title
+                                    </p>
+                                    <input type="text" placeholder="An Phu Court">
+                                </div>
+                                <div class="input__wrapper">
+                                    <p class="input__label">
+                                        Describe your court
+                                    </p>
+                                    <textarea rows="5" placeholder="Example:"></textarea>
+                                </div>
+                                <div class="input__wrapper">
+                                    <p class="input__label">
+                                        Court contact number
+                                    </p>
+                                    <input type="text" placeholder="0123456789">
+                                </div>
+                            </fieldset>
+                        </div>
+    
+                        <div id="cancellation-policy" class="form__fieldset-wrapper">
+                            <h4 class="form__fieldset-label">Cancellation policy</h4>
+                            <fieldset class="form__fieldset fieldset-radio">
+                                <div class="radio__item">
+                                    <div class="radio-input">
+                                        <input id="flexible" name="cancellation-policy" type="radio" checked>
+                                    </div>
+                                    <label for="flexible">
+                                        <span class="radio__item-label-title">Flexible</span>
+                                        <p class="radio__item-label-des">Guests can cancel up to 1 day prior to check-in for a 100% refund. In case of a no show, player will receive 50% of the booking price.</p>
+                                    </label>
+                                </div>
+                                <div class="radio__item">
+                                    <div class="radio-input">
+                                        <input id="moderate" name="cancellation-policy" type="radio">
+                                    </div>
+                                    <label for="moderate">
+                                        <span class="radio__item-label-title">Moderate</span>
+                                        <p class="radio__item-label-des">Guests can cancel up to 5 days prior to check-in for a 100% refund. In case of a no show, player will receive 30% of the booking price.</p>
+                                    </label>
+                                </div>
+                                <div class="radio__item">
+                                    <div class="radio-input">
+                                        <input id="strict" name="cancellation-policy" type="radio">
+                                    </div>
+                                    <label for="strict">
+                                        <span class="radio__item-label-title">Strict</span>
+                                        <p class="radio__item-label-des">Guests can cancel up to 7 days prior to check-in for a 100% refund. In case of a no show, player will receive 0% of the booking price.</p>
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+    
+                        <div id="location" class="form__fieldset-wrapper">
+                            <h4 class="form__fieldset-label">Location</h4>
+                            <fieldset class="form__fieldset">
+                                <div class="input__wrapper">
+                                    <p class="input__label">
+                                        Street address
+                                    </p>
+                                    <input type="text" placeholder="An Phu Court">
+                                </div>
+                                <div class="input__wrapper">
+                                    <p class="input__label">
+                                        Building, floor and unit number (optional)
+                                    </p>
+                                    <input type="text">
+                                </div>
+                                <div class="select-group">
+                                    <div class="input__wrapper">
+                                        <p class="input__label">
+                                            State / Province
+                                        </p>
+                                        <select name="state-province" id="state-province">
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="input__wrapper">
+                                        <p class="input__label">
+                                            City / District
+                                        </p>
+                                        <select name="state-province" id="state-province">
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="map__wrapper">
+                                    <p class="input__label">
+                                        Map location
+                                    </p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193379.60273893902!2d106.64822067789478!3d10.851541087754264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1659511704457!5m2!1sen!2s" width="576" height="211" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </fieldset>
+                        </div>
+    
+                        <div id="resided-court" class="form__fieldset-wrapper">
+                            <h4 class="form__fieldset-label">Resided court and details</h4>
+                            <p class="form__fieldset-label-des">You only need to create one resided court at this stage. Additional court 
+                                can then be added later.</p>
+                            <fieldset class="form__fieldset">
+                                <div class="input__wrapper">
+                                    <p class="input__label">
+                                        Court name
+                                    </p>
+                                    <input type="text" placeholder="Court 1">
+                                </div>
+                                <div class="input__wrapper">
+                                    <p class="input__label">
+                                        Court size
+                                    </p>
+                                    <input type="text">
+                                </div>
+                                <div class="court-price">
+                                    <p class="input__label">Court Price</p>
+                                    <div class="court-price__item">
+                                        <div class="input__wrapper">
+                                            <p class="input__label input__label--small">
+                                                Time
+                                            </p>
+                                            <select name="time" id="time">
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                        <div class="input__wrapper">
+                                            <p class="input__label input__label--small">
+                                                Price (per hour)
+                                            </p>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="court-price__add-item">
+                                        <span class="add-times-icon">
+                                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.2778 4.9156H6.50447V1.14232C6.50447 1.03309 6.41511 0.943726 6.30588 0.943726H5.11432C5.00509 0.943726 4.91572 1.03309 4.91572 1.14232V4.9156H1.14244C1.03321 4.9156 0.943848 5.00497 0.943848 5.11419V6.30576C0.943848 6.41498 1.03321 6.50435 1.14244 6.50435H4.91572V10.2776C4.91572 10.3869 5.00509 10.4762 5.11432 10.4762H6.30588C6.41511 10.4762 6.50447 10.3869 6.50447 10.2776V6.50435H10.2778C10.387 6.50435 10.4763 6.41498 10.4763 6.30576V5.11419C10.4763 5.00497 10.387 4.9156 10.2778 4.9156Z" fill="black" fill-opacity="0.6"/>
+                                            </svg>
+                                        </span>
+                                        <span class="input__label">Add time</span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+    
+                        <div id="court-photo" class="form__fieldset-wrapper">
+                            <h4 class="form__fieldset-label">Court Photo</h4>
+                            <p class="form__fieldset-label-des">The court's exterior, parking space(s), entrance, and any available facilities</p>
+                            <fieldset class="form__fieldset">
+                                <label name="photo-file" class="add-photo__btn">
+                                    <img src="./asset/img/bx_image-add.png" alt="Img Add">
+                                    <p class="add-photo__btn-title">
+                                        Add Photos
+                                    </p>
+                                    <p class="add-photo__btn-des">
+                                        or drag and drop
+                                    </p>
+                                </label>
+                                <input type="file" id="photo-file" name="photo-file" hidden>
+                            </fieldset>
+                        </div>
+    
+                        <div id="payment-detail" class="form__fieldset-wrapper">
+                            <h4 class="form__fieldset-label">Payment Detail</h4>
+                            <fieldset class="form__fieldset">
+                                <div class="input__wrapper">
+                                    <p class="input__label">
+                                        Choose bank
+                                    </p>
+                                    <select id="choose-bank" name="choose-bank">
+                                        <option>Techcombank</option>
+                                    </select>
+                                </div>
+
+                                <div class="input__wrapper">
+                                    <p class="input__label">
+                                        Card number
+                                    </p>
+                                    <div class="input__card">
+                                        <input type="text">
+                                        <span class="check-img">
+                                            <img src="./asset/img/check.png">
+                                        </span>
+                                        <span class="vi-img">
+                                            <img src="./asset/img/vi.png">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="input__wrapper">
+                                    <p class="input__label">
+                                        Name on card
+                                    </p>
+                                    <input type="text">
+                                </div>
+                            </fieldset>
+                        </div>
+    
+                        <div id="business-license" class="form__fieldset-wrapper">
+                            <h4 class="form__fieldset-label">Business License</h4>
+                            <p class="form__fieldset-label-des">Your court’s certificate of Business registration</p>
+                            <fieldset class="form__fieldset">
+                                <div class="add-photo__item">
+                                    <label name="photo-file" class="add-photo__btn">
+                                        <img src="./asset/img/bx_image-add.png" alt="Img Add">
+                                        <p class="add-photo__btn-title">
+                                            Add Photos
+                                        </p>
+                                        <p class="add-photo__btn-des">
+                                            or drag and drop
+                                        </p>
+                                    </label>
+                                    <input type="file" id="photo-file" name="photo-file" hidden>
+                                </div>
+                                <div class="add-photo__item">
+                                    <label name="photo-file" class="add-photo__btn">
+                                        <img src="./asset/img/bx_image-add.png" alt="Img Add">
+                                        <p class="add-photo__btn-title">
+                                            Add Photos
+                                        </p>
+                                        <p class="add-photo__btn-des">
+                                            or drag and drop
+                                        </p>
+                                    </label>
+                                    <input type="file" id="photo-file" name="photo-file" hidden>
+                                </div>
+                            </fieldset>
+                        </div>
+    
+                        <div class="btn-group">
+                            <button class="btn-cancel">Cancel</button>
+                            <button class="btn-confirm" type="submit">Confirm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script>
+    document.querySelector(".modal .btn-cancel").onclick = function(event) {
+        event.preventDefault();
+        document.querySelector(".modal").style.display = 'none';
+    }
+
+    document.querySelector(".jumbotron__btn").onclick = function() {
+        document.querySelector(".modal").style.display = 'flex';
+    }
+</script>
 
 </html>
